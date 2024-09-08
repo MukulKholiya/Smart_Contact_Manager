@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"
+th:replace="~{base2 :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <title data-th-text="${userLoggedIn.getName()}+' | Dashboard'">Profile Page</title>
+    
+    <link rel="stylesheet" data-th-href="@{'/output.css'}"/>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <!-- side bar -->
+        <div data-th-if="${userLoggedIn}">
+            <div data-th-replace="~{user/sidebar :: sidebar}"></div>
+         </div>
+
+        <!-- main content -->
+    <div class="sm:ml-64" style="height: 1000px">
+        <div class="flex justify-center flex-col items-center ">
+            <h1 class="text-5xl pt-5">Welcome to Dashboard Page</h1>
+            
+        </div>
+       
+        
+    </div>
+</div>
+    
+    <script>
+        console.log("This is profile page");
+    </script>
+</body>
+</html>
