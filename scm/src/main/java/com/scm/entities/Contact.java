@@ -21,8 +21,9 @@ public class Contact {
     @Column(nullable = false)
     private String contact;
     private String address;
-    @Lob
-    private byte[] picture;
+
+    private String picture;
+    @Builder.Default
     private boolean favourite = false;
     @ManyToOne
     private User user;
