@@ -24,6 +24,8 @@ public class Contact {
 
     private String picture;
     @Builder.Default
+    private String linnkedIn=null;
+    @Builder.Default
     private boolean favourite = false;
     @ManyToOne
     private User user;

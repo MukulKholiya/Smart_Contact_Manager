@@ -62,6 +62,7 @@ public class ContactController {
         contact.setFavourite(contactForm.isFavourite());
         contact.setContact(contactForm.getPhoneNumber());
         contact.setAddress(contactForm.getAddress());
+        contact.setLinnkedIn(contactForm.getLinkedIn());
         contact.setPicture(fileURL);
         contact.setUser(user);
         contactService.save(contact);

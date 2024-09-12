@@ -11,6 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Builder
 public class ContactForm {
     @NotBlank(message = "Name is required")
     private String name;
@@ -20,6 +21,8 @@ public class ContactForm {
     @Pattern(regexp = "^[0-9]{10}$",message = "Invalid Phone Number")
     private String phoneNumber;
     private String address;
+
+    private String LinkedIn;
     private boolean favourite;
     private MultipartFile profileImage;
 }

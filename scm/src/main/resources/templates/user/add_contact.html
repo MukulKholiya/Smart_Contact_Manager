@@ -63,6 +63,19 @@ th:replace="~{base2 :: parent(~{::#content},~{::title},~{::script})}">
                             data-th-errors="*{email}" 
                             class="text-red-600 px-1 py-2" >Correct Email is Required</p>
 
+                        <!-- LinkedIN account -->
+
+                        <label for="input-group-1" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Contact LinkedIn </label>
+                        <div class="relative mb-1">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <input
+                        data-th-field="*{linkedIn}"
+                        type="text"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="linkedIn account">
+                        </div>
+                    
+
                         <!-- Contact Phone -->
 
                         <label for="input-group-1" class="block mb-2 mt-2 text-sm font-medium text-gray-900 dark:text-white">Contact Phone</label>
