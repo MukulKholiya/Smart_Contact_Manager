@@ -88,6 +88,6 @@ public class PageController {
 
 
 
-        return "redirect:/register";
+        return "redirect:/login";
     }
 }
